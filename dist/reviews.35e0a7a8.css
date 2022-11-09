@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Syne&display=swap");
+@import url("http://fonts.cdnfonts.com/css/helvetica-neue-9");
+@import url("http://fonts.cdnfonts.com/css/futura-md-bt");
+@import url("http://fonts.cdnfonts.com/css/avenir-next-lt-pro");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.block {
+  height: 150px;
+  width: 200vw;
+}
+
+body {
+  font-family: "Avenir Next LT Pro", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 700;
+  height: 100vh;
+  background: white;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+img, video, canvas, svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*-----Variables-------------*/
+.section {
+  padding: 1rem;
+  overflow: hidden;
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+@media (min-width: 650px) {
+  .section {
+    padding: 5rem;
+  }
+}
+.section__header-title {
+  font-weight: 400;
+  font-size: 17px;
+  color: #666;
+}
+.section__header-subtitle {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.reviews {
+  position: relative;
+  background: #11111D;
+  color: white;
+}
+.reviews__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.reviews__header .instructor {
+  position: relative;
+  background: #11111D;
+}
+.reviews__header .instructor__curve {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  width: 30%;
+  height: 120%;
+  border-left: 2px solid #851115;
+  border-radius: 50%;
+  transform: rotate(-20deg);
+  box-shadow: 0 8px 23px 0 rgba(31, 38, 135, 0.67);
+}
+.reviews__header .instructor__infos {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 25px;
+}
+.reviews__header .instructor__img {
+  width: 50px;
+  height: 10px;
+  border-radius: 50%;
+  background-repeat: 2px solid #851115;
+  z-index: 2;
+}
+.reviews__header .instructor__col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.reviews__header .instructor__info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.reviews__header .instructor__info img {
+  width: 20px;
+  height: 20px;
+}
+
+.swiper__wrapper {
+  padding: 2rem 0;
+}
+
+.swiper {
+  min-height: 500px;
+}
+
+.review {
+  position: relative;
+  display: flex;
+  font-size: 16px;
+  padding: 5px;
+}
+.review__card {
+  position: relative;
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+}
+.review svg {
+  width: 30px;
+  fill: #851115;
+}
+.review__topborder {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+}
+.review__text {
+  user-select: none;
+}
+.review__text span {
+  font-size: 300x;
+  font-weight: 600;
+}
+.review__img {
+  width: 70px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 35px;
+}
+.review__profile {
+  position: absolute;
+  left: 5rem;
+  bottom: -2rem;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=/reviews.35e0a7a8.css.map */

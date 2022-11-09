@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Syne&display=swap");
+@import url("http://fonts.cdnfonts.com/css/helvetica-neue-9");
+@import url("http://fonts.cdnfonts.com/css/futura-md-bt");
+@import url("http://fonts.cdnfonts.com/css/avenir-next-lt-pro");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.block {
+  height: 150px;
+  width: 200vw;
+}
+
+body {
+  font-family: "Avenir Next LT Pro", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 700;
+  height: 100vh;
+  background: white;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+img, video, canvas, svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*-----Variables-------------*/
+.section {
+  padding: 1rem;
+  overflow: hidden;
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+@media (min-width: 650px) {
+  .section {
+    padding: 5rem;
+  }
+}
+.section__header-title {
+  font-weight: 400;
+  font-size: 17px;
+  color: #666;
+}
+.section__header-subtitle {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.faq {
+  position: relative;
+  width: 100%;
+  color: #dfd2b8;
+  background: black;
+}
+.faq__wrap {
+  padding: 3rem 4.5%;
+}
+.faq .question {
+  position: relative;
+  border-bottom: 1px solid #dfd2b8;
+  color: #dfd2b8;
+  padding: 24px 0 24px 0;
+}
+.faq .question h3 {
+  cursor: pointer;
+  font-size: 27px;
+  color: #dfd2b8;
+  font-weight: 600;
+}
+@media (max-width: 700x) {
+  .faq .question h3 {
+    font-size: 22px;
+  }
+}
+.faq .question__wrap {
+  display: grid;
+  grid-template-columns: 26px auto;
+  align-items: center;
+  gap: 1rem;
+}
+.faq .question__answer {
+  font-family: "Avenir Next LT Pro", sans-serif;
+  font-size: 20px;
+  margin: 20px 0;
+  max-width: 40em;
+  color: #dfd2b8;
+  padding-left: 40px;
+  transition: all 0.2 ease-in-out;
+  display: none;
+}
+.faq .question__status {
+  width: 26px;
+  height: 26px;
+  background: transparent;
+  border: 3px solid #dfd2b8;
+  border-radius: 50%;
+  margin-top: 2px;
+  transition: all 0.2 ease-in-out;
+}
+@media (max-width: 700px) {
+  .faq .question__status {
+    width: 25px;
+    height: 25px;
+  }
+}
+.faq .question.open .question__answer {
+  display: block;
+}
+.faq .question.open .question__status {
+  background: #0f0f0f;
+  outline: 1px solid #0f0f0f;
+  outline-offset: 2px;
+}
+
+/*# sourceMappingURL=/faq.9e64de2b.css.map */

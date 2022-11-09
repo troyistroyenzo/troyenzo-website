@@ -1,0 +1,87 @@
+.projects__header {
+  font-size: 60px;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.project__header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: lrem;
+  font-family: "Avenir Next LT Pro", sans-serif;
+}
+.project__header span {
+  border-top: 1px solid #000;
+  padding: 1rem;
+  text-align: center;
+}
+.project__infos {
+  margin-top: 1rem;
+}
+.project__infos--name {
+  position: relative;
+  font-size: 3vw;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+.project__img {
+  position: relative;
+  width: 100vw;
+  height: 100px;
+}
+.project__img img {
+  width: 60vw;
+  height: 600px;
+  object-fit: cover;
+  position: absolute;
+  right: 10vw;
+  top: 3rem;
+}
+.project__iframe {
+  position: relative;
+  width: 100vw;
+  height: 700px;
+}
+.project__iframe iframe {
+  min-width: 60vw;
+  min-height: 600px;
+  object-fit: cover;
+  position: absolute;
+  right: 20vw;
+  top: 3rem;
+  padding: 1rem;
+}
+.project__tweet {
+  position: relative;
+  width: 100vw;
+  height: 700px;
+  min-width: 60vw;
+  min-height: 600px;
+  object-fit: cover;
+  right: 20vw;
+  top: 3rem;
+  padding: 1rem;
+}
+.project__links {
+  padding-top: 3rem;
+}
+.project__links button:before {
+  background: black;
+}
+
+@media (max-width: 1350px) {
+  .projects {
+    padding: 3rem;
+  }
+  .project__img img {
+    width: 74vw;
+    right: 5rem;
+  }
+  .project__infos--name {
+    font-size: 38px;
+  }
+}
+
+/*# sourceMappingURL=/featured.dd294465.css.map */
